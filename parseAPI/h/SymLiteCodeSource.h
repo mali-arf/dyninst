@@ -68,6 +68,7 @@ class SymReaderCodeRegion : public CodeRegion {
     PARSER_EXPORT unsigned int getAddressWidth() const;
     PARSER_EXPORT bool isCode(const Address) const;
     PARSER_EXPORT bool isData(const Address) const;
+    PARSER_EXPORT bool isReadOnly(const Address) const;
     PARSER_EXPORT Address offset() const;
     PARSER_EXPORT Address length() const;
     PARSER_EXPORT Architecture getArch() const;
@@ -109,6 +110,7 @@ class SymReaderCodeSource : public CodeSource {
     PARSER_EXPORT unsigned int getAddressWidth() const;
     PARSER_EXPORT bool isCode(const Address) const;
     PARSER_EXPORT bool isData(const Address) const;
+    PARSER_EXPORT bool isReadOnly(const Address) const;
     PARSER_EXPORT Address offset() const;
     PARSER_EXPORT Address length() const;
     PARSER_EXPORT Architecture getArch() const;
